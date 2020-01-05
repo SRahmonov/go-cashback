@@ -15,7 +15,7 @@ func Test_cashback(t *testing.T) {
 	}
 	for _, test := range tests {
 		got := cashback(test.amount)
-		if got != cashback(test.want) {
+		if got != test.want {
 			t.Error("For cashback test:", test.name, "got:", test.name, "want:", test.want)
 		}
 	}
